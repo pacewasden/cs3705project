@@ -6,6 +6,5 @@ addresses = {
 }
 
 #edit to make sure that this works.
-
-myvar= pd.DataFrame(addresses, index=['row1','row2'])
-print(myvar['row2'])
+testdata=pd.read_csv('testdata.csv')
+print(testdata.to_string())

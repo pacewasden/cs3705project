@@ -1,3 +1,6 @@
 from ip2geotools.databases.noncommercial import DbIpCity
-response = DbIpCity.get('147.229.2.90', api_key='free')
-print(response.city)
+def location(ipaddress):
+    response = DbIpCity.get(ipaddress, api_key='free')
+    return(response.city)
+
+#print(location('147.229.2.90'))

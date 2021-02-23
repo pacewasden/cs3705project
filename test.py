@@ -7,7 +7,8 @@ addresses = {
 }
 
 #edit to make sure that this works.
-# testdata=pd.read_csv('testdata.csv')
-# print(testdata[453].to_string())
+testdata = pd.read_csv('testdata.csv')
 
-print(geolocation.location('161.170.236.29'))
+print(testdata[3:4])
+
+# print(geolocation.location('161.170.236.29'))
